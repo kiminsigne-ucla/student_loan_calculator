@@ -1,0 +1,25 @@
+size	amount	region
+1	12490	contiguous 48
+2	16910	contiguous 48
+3	21330	contiguous 48
+4	25750	contiguous 48
+5	30170	contiguous 48
+6	34590	contiguous 48
+7	39010	contiguous 48
+8	43430	contiguous 48
+1	15600	Alaska
+2	211301	Alaska
+3	26660	Alaska
+4	32190	Alaska
+5	37720	Alaska
+6	43250	Alaska
+7	48780	Alaska
+8	54310	Alaska
+1	14380	Hawaii
+2	19460	Hawaii
+3	24540	Hawaii
+4	29620	Hawaii
+5	34700	Hawaii
+6	39780	Hawaii
+7	44860	Hawaii
+8	49940	Hawaii
