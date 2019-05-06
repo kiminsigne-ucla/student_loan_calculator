@@ -15,7 +15,7 @@ import numpy as np
 from math import pi
 from copy import deepcopy
 
-os.chdir('/Users/Kimberly/Documents/code_fun/repaye_calculator')
+
 
 
 global poverty_df
