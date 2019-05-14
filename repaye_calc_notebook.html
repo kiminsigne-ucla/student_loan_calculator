@@ -11775,8 +11775,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Revised-Pay-As-You-Earn-(REPAYE)-student-loan-calculator">Revised Pay As You Earn (REPAYE) student loan calculator<a class="anchor-link" href="#Revised-Pay-As-You-Earn-(REPAYE)-student-loan-calculator">&#182;</a></h1><p>In this notebook, I will implement my own version of a student loan calculator, like this <a href="https://studentloanhero.com/calculators/student-loan-revised-pay-as-you-earn-calculator/">exampe</a> from Studen Loan Hero. My fiance went to medical school at USC and took out full loans to cover his tuition and living expenses for four years. He has been on an income-based repayment plan during his two years in residency. We recently learned that it's very disadvantageous for us to be legally married, as my income is automatically combined with his and his monthly loan payments would greatly increase. I wanted to run the numbers myself, in an interactive and visual way. This is what I came up with!</p>
-<p><strong>Disclaimer</strong>: This should in no way be taken as financial advice or be taken to be completely accurate. We still plan on consulting with a tax professional on all of this, but I just wanted to code this up myself for my own peace of mind and to get a rough idea of the numbers.</p>
+<h1 id="Revised-Pay-As-You-Earn-(REPAYE)-student-loan-calculator">Revised Pay As You Earn (REPAYE) student loan calculator<a class="anchor-link" href="#Revised-Pay-As-You-Earn-(REPAYE)-student-loan-calculator">&#182;</a></h1><p>In this notebook, I will implement my own version of a student loan calculator, like this <a href="https://studentloanhero.com/calculators/student-loan-revised-pay-as-you-earn-calculator/">example</a> from Studen Loan Hero. My friend went to medical school and took out full loans to cover his tuition and living expenses for four years. He has been on an income-based repayment plan during his two years in residency. We recently learned that it's very disadvantageous for him to be legally married in the future, as the spouse's income is considered joint income, regardless of tax filing status. His monthly loan payments would greatly increase. I wanted to run the numbers to educate myself about student loan debt that many of my friends have, in an interactive and visual way. This is what I came up with!</p>
+<p><strong>Disclaimer</strong>: This should in no way be taken as financial advice or be taken to be completely accurate. We still plan on consulting with a tax professional on all of this, but I just wanted to code this up myself as a fun exercise to get a rough idea of the numbers.</p>
 
 </div>
 </div>
@@ -11858,10 +11858,10 @@ div#notebook {
 
 
 
-<div id="bc0a6a39-e098-4bc4-9201-8f967f8f871f"></div>
+<div id="b37ad6cb-53bc-417a-a1e2-6c8cdd2005dc"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#bc0a6a39-e098-4bc4-9201-8f967f8f871f');
+var element = $('#b37ad6cb-53bc-417a-a1e2-6c8cdd2005dc');
 
 (function(root) {
   function now() {
@@ -12172,24 +12172,24 @@ var element = $('#bc0a6a39-e098-4bc4-9201-8f967f8f871f');
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">discretionary_income</span><span class="p">(</span><span class="n">gross_income</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">region</span><span class="p">,</span> <span class="n">poverty_df</span><span class="p">):</span>
 
-	<span class="k">if</span> <span class="n">size</span> <span class="o">&gt;</span> <span class="mi">8</span><span class="p">:</span>
-		<span class="k">if</span> <span class="n">region</span> <span class="o">==</span> <span class="s1">&#39;Alaska&#39;</span><span class="p">:</span>
-			<span class="n">bonus</span> <span class="o">=</span> <span class="mi">5530</span> <span class="o">*</span> <span class="p">(</span><span class="n">size</span> <span class="o">-</span> <span class="mi">8</span><span class="p">)</span>
-		<span class="k">elif</span> <span class="n">region</span> <span class="o">==</span> <span class="s1">&#39;Hawaii&#39;</span><span class="p">:</span>
-			<span class="n">bonus</span> <span class="o">=</span> <span class="mi">5080</span> <span class="o">*</span> <span class="p">(</span><span class="n">size</span> <span class="o">-</span> <span class="mi">8</span><span class="p">)</span>
-		<span class="k">else</span><span class="p">:</span>
-			<span class="n">bonus</span> <span class="o">=</span> <span class="mi">4420</span> <span class="o">*</span> <span class="p">(</span><span class="n">size</span> <span class="o">-</span> <span class="mi">8</span><span class="p">)</span>
-	<span class="k">else</span><span class="p">:</span>
-		<span class="n">bonus</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">if</span> <span class="n">size</span> <span class="o">&gt;</span> <span class="mi">8</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">region</span> <span class="o">==</span> <span class="s1">&#39;Alaska&#39;</span><span class="p">:</span>
+            <span class="n">bonus</span> <span class="o">=</span> <span class="mi">5530</span> <span class="o">*</span> <span class="p">(</span><span class="n">size</span> <span class="o">-</span> <span class="mi">8</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">region</span> <span class="o">==</span> <span class="s1">&#39;Hawaii&#39;</span><span class="p">:</span>
+            <span class="n">bonus</span> <span class="o">=</span> <span class="mi">5080</span> <span class="o">*</span> <span class="p">(</span><span class="n">size</span> <span class="o">-</span> <span class="mi">8</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">bonus</span> <span class="o">=</span> <span class="mi">4420</span> <span class="o">*</span> <span class="p">(</span><span class="n">size</span> <span class="o">-</span> <span class="mi">8</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">bonus</span> <span class="o">=</span> <span class="mi">0</span>
 
-	<span class="c1"># 150% above poverty level</span>
-	<span class="n">poverty_level</span> <span class="o">=</span> <span class="n">poverty_df</span><span class="o">.</span><span class="n">amount</span><span class="p">[</span>
-	<span class="p">(</span><span class="n">poverty_df</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">size</span><span class="p">)</span> <span class="o">&amp;</span>
-	<span class="p">(</span><span class="n">poverty_df</span><span class="p">[</span><span class="s1">&#39;region&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">region</span><span class="p">)]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">bonus</span>
+    <span class="c1"># 150% above poverty level</span>
+    <span class="n">poverty_level</span> <span class="o">=</span> <span class="n">poverty_df</span><span class="o">.</span><span class="n">amount</span><span class="p">[</span>
+    <span class="p">(</span><span class="n">poverty_df</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">size</span><span class="p">)</span> <span class="o">&amp;</span>
+    <span class="p">(</span><span class="n">poverty_df</span><span class="p">[</span><span class="s1">&#39;region&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">region</span><span class="p">)]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">bonus</span>
 
-	<span class="n">discretionary</span> <span class="o">=</span> <span class="n">gross_income</span> <span class="o">-</span> <span class="p">(</span><span class="mf">1.5</span> <span class="o">*</span> <span class="n">poverty_level</span><span class="p">)</span>
+    <span class="n">discretionary</span> <span class="o">=</span> <span class="n">gross_income</span> <span class="o">-</span> <span class="p">(</span><span class="mf">1.5</span> <span class="o">*</span> <span class="n">poverty_level</span><span class="p">)</span>
 
-	<span class="k">return</span> <span class="n">discretionary</span>
+    <span class="k">return</span> <span class="n">discretionary</span>
 </pre></div>
 
 </div>
@@ -12212,11 +12212,11 @@ var element = $('#bc0a6a39-e098-4bc4-9201-8f967f8f871f');
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">calculate_interest</span><span class="p">(</span><span class="n">loan</span><span class="p">,</span> <span class="n">interest_rate</span><span class="p">,</span> <span class="n">loan_years</span><span class="p">,</span> <span class="n">subsidy</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-	<span class="c1"># interest rate should be in decimal, not percentage</span>
-	<span class="n">interest_annual</span> <span class="o">=</span> <span class="n">loan</span> <span class="o">*</span> <span class="n">interest_rate</span>
-	<span class="n">interest</span> <span class="o">=</span> <span class="n">loan_years</span> <span class="o">*</span> <span class="n">interest_annual</span>
-	<span class="n">interest_paid</span> <span class="o">=</span> <span class="n">interest</span> <span class="o">-</span> <span class="p">(</span><span class="n">interest</span> <span class="o">*</span> <span class="n">subsidy</span><span class="p">)</span>
-	<span class="k">return</span> <span class="n">interest_paid</span>
+    <span class="c1"># interest rate should be in decimal, not percentage</span>
+    <span class="n">interest_annual</span> <span class="o">=</span> <span class="n">loan</span> <span class="o">*</span> <span class="n">interest_rate</span>
+    <span class="n">interest</span> <span class="o">=</span> <span class="n">loan_years</span> <span class="o">*</span> <span class="n">interest_annual</span>
+    <span class="n">interest_paid</span> <span class="o">=</span> <span class="n">interest</span> <span class="o">-</span> <span class="p">(</span><span class="n">interest</span> <span class="o">*</span> <span class="n">subsidy</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">interest_paid</span>
 </pre></div>
 
 </div>
@@ -12254,40 +12254,40 @@ var element = $('#bc0a6a39-e098-4bc4-9201-8f967f8f871f');
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">calculate_loan_payment</span><span class="p">(</span><span class="n">plan_type</span><span class="p">,</span> <span class="n">loan_years</span><span class="p">,</span> <span class="n">loan</span><span class="p">,</span> <span class="n">interest_rate</span><span class="p">,</span> 
-	<span class="n">income_ag</span><span class="p">,</span> <span class="n">income_growth</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">region</span><span class="p">,</span> <span class="n">marital_status</span><span class="p">,</span> <span class="n">income_spouse</span><span class="p">):</span>
+    <span class="n">income_ag</span><span class="p">,</span> <span class="n">income_growth</span><span class="p">,</span> <span class="n">size</span><span class="p">,</span> <span class="n">region</span><span class="p">,</span> <span class="n">marital_status</span><span class="p">,</span> <span class="n">income_spouse</span><span class="p">):</span>
 
-	<span class="c1"># determine income. If REPAYE, joint income considered regardless of </span>
-	<span class="c1"># filing status</span>
-	<span class="k">if</span> <span class="n">marital_status</span> <span class="o">!=</span> <span class="s1">&#39;single&#39;</span><span class="p">:</span>
-		<span class="k">if</span> <span class="n">marital_status</span> <span class="o">==</span> <span class="s1">&#39;married filing separate&#39;</span><span class="p">:</span>
-			<span class="k">if</span> <span class="n">plan_type</span> <span class="o">!=</span> <span class="s1">&#39;REPAYE&#39;</span><span class="p">:</span>
-				<span class="n">income_total_gross</span> <span class="o">=</span> <span class="n">income_ag</span>
-			<span class="k">else</span><span class="p">:</span>
-				<span class="n">income_total_gross</span> <span class="o">=</span> <span class="n">income_ag</span> <span class="o">+</span> <span class="n">income_spouse</span>
-		<span class="k">else</span><span class="p">:</span> <span class="c1"># married filing jointly</span>
-			<span class="n">income_total_gross</span> <span class="o">=</span> <span class="n">income_ag</span> <span class="o">+</span> <span class="n">income_spouse</span>
-	<span class="k">else</span><span class="p">:</span>
-		<span class="n">income_total_gross</span> <span class="o">=</span> <span class="n">income_ag</span>
+    <span class="c1"># determine income. If REPAYE, joint income considered regardless of </span>
+    <span class="c1"># filing status</span>
+    <span class="k">if</span> <span class="n">marital_status</span> <span class="o">!=</span> <span class="s1">&#39;single&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">marital_status</span> <span class="o">==</span> <span class="s1">&#39;married filing separate&#39;</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">plan_type</span> <span class="o">!=</span> <span class="s1">&#39;REPAYE&#39;</span><span class="p">:</span>
+                <span class="n">income_total_gross</span> <span class="o">=</span> <span class="n">income_ag</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">income_total_gross</span> <span class="o">=</span> <span class="n">income_ag</span> <span class="o">+</span> <span class="n">income_spouse</span>
+        <span class="k">else</span><span class="p">:</span> <span class="c1"># married filing jointly</span>
+            <span class="n">income_total_gross</span> <span class="o">=</span> <span class="n">income_ag</span> <span class="o">+</span> <span class="n">income_spouse</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">income_total_gross</span> <span class="o">=</span> <span class="n">income_ag</span>
 
-	<span class="k">if</span> <span class="n">plan_type</span> <span class="o">==</span> <span class="s1">&#39;standard&#39;</span><span class="p">:</span>
-		<span class="n">plan</span> <span class="o">=</span> <span class="n">standard_plan</span><span class="p">(</span><span class="n">loan</span><span class="p">,</span> <span class="n">income_ag</span><span class="p">,</span> <span class="n">income_growth</span><span class="p">,</span> <span class="n">interest_rate</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">plan_type</span> <span class="o">==</span> <span class="s1">&#39;standard&#39;</span><span class="p">:</span>
+        <span class="n">plan</span> <span class="o">=</span> <span class="n">standard_plan</span><span class="p">(</span><span class="n">loan</span><span class="p">,</span> <span class="n">income_ag</span><span class="p">,</span> <span class="n">income_growth</span><span class="p">,</span> <span class="n">interest_rate</span><span class="p">)</span>
 
-	<span class="k">else</span><span class="p">:</span>
-		<span class="n">income_discretionary</span> <span class="o">=</span> <span class="n">discretionary_income</span><span class="p">(</span>
-			<span class="n">income_total_gross</span><span class="p">,</span> 
-			<span class="n">size</span><span class="p">,</span> 
-			<span class="n">region</span><span class="p">,</span> 
-			<span class="n">poverty_df</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">income_discretionary</span> <span class="o">=</span> <span class="n">discretionary_income</span><span class="p">(</span>
+            <span class="n">income_total_gross</span><span class="p">,</span> 
+            <span class="n">size</span><span class="p">,</span> 
+            <span class="n">region</span><span class="p">,</span> 
+            <span class="n">poverty_df</span><span class="p">)</span>
 
-		<span class="n">plan</span> <span class="o">=</span> <span class="n">income_based_payments</span><span class="p">(</span>
-			<span class="n">income_discretionary</span><span class="p">,</span>
-			<span class="n">income_growth</span><span class="p">,</span>
-			<span class="n">loan_years</span><span class="p">,</span>
-			<span class="n">loan</span><span class="p">,</span>
-			<span class="n">interest_rate</span><span class="p">,</span>
-			<span class="n">plan_type</span><span class="p">)</span>
+        <span class="n">plan</span> <span class="o">=</span> <span class="n">income_based_payments</span><span class="p">(</span>
+            <span class="n">income_discretionary</span><span class="p">,</span>
+            <span class="n">income_growth</span><span class="p">,</span>
+            <span class="n">loan_years</span><span class="p">,</span>
+            <span class="n">loan</span><span class="p">,</span>
+            <span class="n">interest_rate</span><span class="p">,</span>
+            <span class="n">plan_type</span><span class="p">)</span>
 
-	<span class="k">return</span> <span class="n">plan</span>
+    <span class="k">return</span> <span class="n">plan</span>
 </pre></div>
 
 </div>
@@ -12309,89 +12309,88 @@ var element = $('#bc0a6a39-e098-4bc4-9201-8f967f8f871f');
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">income_based_payments</span><span class="p">(</span><span class="n">income</span><span class="p">,</span> <span class="n">income_growth</span><span class="p">,</span> <span class="n">loan_years</span><span class="p">,</span>
-<span class="n">loan</span><span class="p">,</span> <span class="n">interest_rate</span><span class="p">,</span> <span class="n">plan_type</span><span class="p">,</span> <span class="n">income_percentage</span><span class="o">=</span><span class="mf">0.10</span><span class="p">):</span>
-	<span class="c1"># income percentage, income_growth and interest_rate should be in decimal, </span>
-	<span class="c1"># not percentage</span>
-	<span class="n">payment_total</span> <span class="o">=</span> <span class="mi">0</span>
-	<span class="n">income_growing</span> <span class="o">=</span> <span class="n">income</span>
-	<span class="n">loan_remaining</span> <span class="o">=</span> <span class="n">loan</span>
+<div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">income_based_payments</span><span class="p">(</span><span class="n">income</span><span class="p">,</span> <span class="n">income_growth</span><span class="p">,</span> <span class="n">loan_years</span><span class="p">,</span> <span class="n">loan</span><span class="p">,</span> <span class="n">interest_rate</span><span class="p">,</span> <span class="n">plan_type</span><span class="p">,</span> <span class="n">income_percentage</span><span class="o">=</span><span class="mf">0.10</span><span class="p">):</span>
+    <span class="c1"># income percentage, income_growth and interest_rate should be in decimal, </span>
+    <span class="c1"># not percentage</span>
+    <span class="n">payment_total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">income_growing</span> <span class="o">=</span> <span class="n">income</span>
+    <span class="n">loan_remaining</span> <span class="o">=</span> <span class="n">loan</span>
 
-	<span class="c1"># REPAYE has interest subsidy, PAYE does not</span>
-	<span class="k">if</span> <span class="n">plan_type</span> <span class="o">==</span> <span class="s1">&#39;REPAYE&#39;</span><span class="p">:</span>
-		<span class="n">subsidy</span> <span class="o">=</span> <span class="mf">0.50</span>
-	<span class="k">else</span><span class="p">:</span>
-		<span class="n">subsidy</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="c1"># REPAYE has interest subsidy, PAYE does not</span>
+    <span class="k">if</span> <span class="n">plan_type</span> <span class="o">==</span> <span class="s1">&#39;REPAYE&#39;</span><span class="p">:</span>
+        <span class="n">subsidy</span> <span class="o">=</span> <span class="mf">0.50</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">subsidy</span> <span class="o">=</span> <span class="mi">0</span>
 
-	<span class="c1"># save yearly payment info to display with Bokeh data table</span>
-	<span class="n">payment_month_list</span> <span class="o">=</span> <span class="p">[]</span>
-	<span class="n">interest_subsidy_list</span> <span class="o">=</span> <span class="p">[]</span>
-	<span class="n">payment_total_list</span> <span class="o">=</span> <span class="p">[]</span>
-	<span class="n">loan_remaining_list</span> <span class="o">=</span> <span class="p">[]</span>
-	<span class="n">interest_list</span> <span class="o">=</span> <span class="p">[]</span>
-	<span class="n">income_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1"># save yearly payment info to display with Bokeh data table</span>
+    <span class="n">payment_month_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">interest_subsidy_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">payment_total_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">loan_remaining_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">interest_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">income_list</span> <span class="o">=</span> <span class="p">[]</span>
 
-	<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">loan_years</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">loan_years</span><span class="p">):</span>
 
-		<span class="c1"># print &quot;Year:&quot;, i</span>
-		<span class="n">payment_annual</span> <span class="o">=</span> <span class="n">income_growing</span> <span class="o">*</span> <span class="n">income_percentage</span>
-		<span class="n">income_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">income_growing</span><span class="p">)</span>
-		<span class="c1"># print &quot;Payment annual:&quot;, payment_annual</span>
-		<span class="n">payment_month</span> <span class="o">=</span> <span class="n">payment_annual</span> <span class="o">/</span> <span class="mf">12.</span>
-		<span class="c1"># print &quot;Monthly payment:&quot;, payment_month</span>
-	
-		
-		<span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-			<span class="n">payment_first_month</span> <span class="o">=</span> <span class="n">payment_annual</span> <span class="o">/</span> <span class="mf">12.</span>
-
-		<span class="n">interest_annual</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">loan</span><span class="p">,</span> <span class="n">loan_remaining</span><span class="p">)</span> <span class="o">*</span> <span class="n">interest_rate</span>
-		<span class="n">interest_remaining</span> <span class="o">=</span> <span class="n">interest_annual</span> <span class="o">-</span> <span class="n">payment_annual</span>
-		
-
-		<span class="k">if</span> <span class="n">interest_remaining</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">subsidy</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
-			<span class="c1"># add interest subsidy, 50% from government</span>
-			<span class="n">interest_subsidy</span> <span class="o">=</span> <span class="n">interest_remaining</span> <span class="o">*</span> <span class="n">subsidy</span>
-			<span class="c1"># do not add remaining unpaid interest, only add interest equal to </span>
-			<span class="c1"># annual payment and subsidy, so loan balance does not change</span>
-			<span class="n">payment_annual</span> <span class="o">+=</span> <span class="n">interest_subsidy</span>
-			<span class="n">interest_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">payment_annual</span><span class="p">)</span>
-		<span class="k">else</span><span class="p">:</span>
-			<span class="n">interest_subsidy</span> <span class="o">=</span> <span class="mi">0</span>
-			<span class="n">loan_remaining</span> <span class="o">+=</span> <span class="n">interest_annual</span>
-			<span class="n">loan_remaining</span> <span class="o">-=</span> <span class="n">payment_annual</span>
-			<span class="n">interest_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">interest_annual</span><span class="p">)</span>
-
-		<span class="c1"># print &quot;Interest subsidy:&quot;, interest_subsidy</span>
+        <span class="c1"># print &quot;Year:&quot;, i</span>
+        <span class="n">payment_annual</span> <span class="o">=</span> <span class="n">income_growing</span> <span class="o">*</span> <span class="n">income_percentage</span>
+        <span class="n">income_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">income_growing</span><span class="p">)</span>
+        <span class="c1"># print &quot;Payment annual:&quot;, payment_annual</span>
+        <span class="n">payment_month</span> <span class="o">=</span> <span class="n">payment_annual</span> <span class="o">/</span> <span class="mf">12.</span>
+        <span class="c1"># print &quot;Monthly payment:&quot;, payment_month</span>
 
 
-		<span class="n">payment_total</span> <span class="o">+=</span> <span class="n">payment_annual</span>
-		<span class="c1"># print &quot;Total payment:&quot;, payment_total</span>
-		
-		<span class="c1"># print &quot;Remaining loan:&quot;, loan_remaining</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">payment_first_month</span> <span class="o">=</span> <span class="n">payment_annual</span> <span class="o">/</span> <span class="mf">12.</span>
 
-		<span class="n">income_growing</span> <span class="o">+=</span> <span class="n">income_growing</span> <span class="o">*</span> <span class="n">income_growth</span>
-
-		<span class="n">payment_month_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">payment_month</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-		<span class="n">interest_subsidy_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">interest_subsidy</span><span class="p">,</span> <span class="mi">2</span><span class="p">)))</span>
-		<span class="n">payment_total_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">payment_total</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-		<span class="n">loan_remaining_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">loan_remaining</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+        <span class="n">interest_annual</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">loan</span><span class="p">,</span> <span class="n">loan_remaining</span><span class="p">)</span> <span class="o">*</span> <span class="n">interest_rate</span>
+        <span class="n">interest_remaining</span> <span class="o">=</span> <span class="n">interest_annual</span> <span class="o">-</span> <span class="n">payment_annual</span>
 
 
-	<span class="n">payments</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
-		<span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">loan_years</span><span class="p">)],</span>
-		<span class="n">payment_month</span> <span class="o">=</span> <span class="n">payment_month_list</span><span class="p">,</span>
-		<span class="n">interest_subsidy</span> <span class="o">=</span> <span class="n">interest_subsidy_list</span><span class="p">,</span>
-		<span class="n">payment_total</span> <span class="o">=</span> <span class="n">payment_total_list</span><span class="p">,</span>
-		<span class="n">loan_remaining</span> <span class="o">=</span> <span class="n">loan_remaining_list</span><span class="p">,</span>
-		<span class="n">interest_annual</span> <span class="o">=</span> <span class="n">interest_list</span><span class="p">,</span>
-		<span class="n">income_annual</span> <span class="o">=</span> <span class="n">income_list</span>
-	<span class="p">)</span>
+        <span class="k">if</span> <span class="n">interest_remaining</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">subsidy</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># add interest subsidy, 50% from government</span>
+            <span class="n">interest_subsidy</span> <span class="o">=</span> <span class="n">interest_remaining</span> <span class="o">*</span> <span class="n">subsidy</span>
+            <span class="c1"># do not add remaining unpaid interest, only add interest equal to </span>
+            <span class="c1"># annual payment and subsidy, so loan balance does not change</span>
+            <span class="n">payment_annual</span> <span class="o">+=</span> <span class="n">interest_subsidy</span>
+            <span class="n">interest_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">payment_annual</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">interest_subsidy</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="n">loan_remaining</span> <span class="o">+=</span> <span class="n">interest_annual</span>
+            <span class="n">loan_remaining</span> <span class="o">-=</span> <span class="n">payment_annual</span>
+            <span class="n">interest_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">interest_annual</span><span class="p">)</span>
 
-	<span class="c1"># add field for annual payment for debugging</span>
-	<span class="n">payments</span><span class="p">[</span><span class="s1">&#39;payment_annual&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="mi">12</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">payments</span><span class="p">[</span><span class="s1">&#39;payment_month&#39;</span><span class="p">]]</span>
+        <span class="c1"># print &quot;Interest subsidy:&quot;, interest_subsidy</span>
 
 
-	<span class="k">return</span> <span class="n">payments</span>
+        <span class="n">payment_total</span> <span class="o">+=</span> <span class="n">payment_annual</span>
+        <span class="c1"># print &quot;Total payment:&quot;, payment_total</span>
+
+        <span class="c1"># print &quot;Remaining loan:&quot;, loan_remaining</span>
+
+        <span class="n">income_growing</span> <span class="o">+=</span> <span class="n">income_growing</span> <span class="o">*</span> <span class="n">income_growth</span>
+
+        <span class="n">payment_month_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">payment_month</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+        <span class="n">interest_subsidy_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">interest_subsidy</span><span class="p">,</span> <span class="mi">2</span><span class="p">)))</span>
+        <span class="n">payment_total_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">payment_total</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+        <span class="n">loan_remaining_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">loan_remaining</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+
+
+    <span class="n">payments</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">loan_years</span><span class="p">)],</span>
+        <span class="n">payment_month</span> <span class="o">=</span> <span class="n">payment_month_list</span><span class="p">,</span>
+        <span class="n">interest_subsidy</span> <span class="o">=</span> <span class="n">interest_subsidy_list</span><span class="p">,</span>
+        <span class="n">payment_total</span> <span class="o">=</span> <span class="n">payment_total_list</span><span class="p">,</span>
+        <span class="n">loan_remaining</span> <span class="o">=</span> <span class="n">loan_remaining_list</span><span class="p">,</span>
+        <span class="n">interest_annual</span> <span class="o">=</span> <span class="n">interest_list</span><span class="p">,</span>
+        <span class="n">income_annual</span> <span class="o">=</span> <span class="n">income_list</span>
+    <span class="p">)</span>
+
+    <span class="c1"># add field for annual payment </span>
+    <span class="n">payments</span><span class="p">[</span><span class="s1">&#39;payment_annual&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="mi">12</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">payments</span><span class="p">[</span><span class="s1">&#39;payment_month&#39;</span><span class="p">]]</span>
+
+
+    <span class="k">return</span> <span class="n">payments</span>
 </pre></div>
 
 </div>
@@ -12415,54 +12414,93 @@ var element = $('#bc0a6a39-e098-4bc4-9201-8f967f8f871f');
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">standard_plan</span><span class="p">(</span><span class="n">loan</span><span class="p">,</span> <span class="n">income</span><span class="p">,</span> <span class="n">income_growth</span><span class="p">,</span> <span class="n">interest_rate</span><span class="p">):</span>
 
-	<span class="n">payment_annual</span> <span class="o">=</span> <span class="n">loan</span> <span class="o">/</span> <span class="mf">10.</span>
-	<span class="n">payment_month</span> <span class="o">=</span> <span class="n">payment_annual</span> <span class="o">/</span> <span class="mf">12.</span>
+    <span class="c1"># initialize monthly payment, doesn&#39;t take into account accruing interest</span>
+    <span class="n">payment_annual</span> <span class="o">=</span> <span class="n">loan</span> <span class="o">/</span> <span class="mf">10.</span>
+    <span class="n">payment_month</span> <span class="o">=</span> <span class="n">payment_annual</span> <span class="o">/</span> <span class="mf">12.</span>
 
-	<span class="n">payment_toal_list</span> <span class="o">=</span> <span class="p">[]</span>
-	<span class="n">loan_remaining_list</span> <span class="o">=</span> <span class="p">[]</span>
-	<span class="n">interest_list</span> <span class="o">=</span> <span class="p">[]</span>
-	<span class="n">income_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">payment_toal_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">loan_remaining_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">interest_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">income_list</span> <span class="o">=</span> <span class="p">[]</span>
 
-	<span class="n">income_growing</span> <span class="o">=</span> <span class="n">income</span>
-	<span class="n">loan_remaining</span> <span class="o">=</span> <span class="n">loan</span>
+    <span class="n">income_growing</span> <span class="o">=</span> <span class="n">income</span>
+    <span class="n">loan_remaining</span> <span class="o">=</span> <span class="n">loan</span>
 
-	<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
-		<span class="c1"># print &quot;Year:&quot;, i</span>
-		<span class="n">income_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">income_growing</span><span class="p">)</span>
-		
-
-		<span class="n">interest_annual</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">loan</span><span class="p">,</span> <span class="n">loan_remaining</span><span class="p">)</span> <span class="o">*</span> <span class="n">interest_rate</span>
-
-		<span class="n">loan_remaining</span> <span class="o">+=</span> <span class="n">interest_annual</span>
-		<span class="n">loan_remaining</span> <span class="o">-=</span> <span class="n">payment_annual</span>
-		
-		<span class="n">interest_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">interest_annual</span><span class="p">)</span>
-
-		<span class="n">payment_total</span> <span class="o">+=</span> <span class="n">payment_annual</span>
-		<span class="c1"># print &quot;Total payment:&quot;, payment_total</span>
-		
-		<span class="c1"># print &quot;Remaining loan:&quot;, loan_remaining</span>
-
-		<span class="n">income_growing</span> <span class="o">+=</span> <span class="n">income_growing</span> <span class="o">*</span> <span class="n">income_growth</span>
-
-		<span class="n">payment_total_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">payment_total</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-		<span class="n">loan_remaining_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">loan_remaining</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+        
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+        <span class="c1"># print &quot;Year:&quot;, i</span>
+        <span class="n">income_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">income_growing</span><span class="p">)</span>
 
 
-	<span class="n">payments</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
-		<span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)],</span>
-		<span class="n">payment_month</span> <span class="o">=</span> <span class="mi">12</span> <span class="o">*</span> <span class="p">[</span><span class="n">payment_month</span><span class="p">],</span>
-		<span class="n">interest_subsidy</span> <span class="o">=</span> <span class="mi">12</span> <span class="o">*</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">],</span>
-		<span class="n">payment_total</span> <span class="o">=</span> <span class="n">payment_total_list</span><span class="p">,</span>
-		<span class="n">loan_remaining</span> <span class="o">=</span> <span class="n">loan_remaining_list</span><span class="p">,</span>
-		<span class="n">interest_annual</span> <span class="o">=</span> <span class="n">interest_list</span><span class="p">,</span>
-		<span class="n">income_annual</span> <span class="o">=</span> <span class="n">income_list</span>
-	<span class="p">)</span>
+        <span class="n">interest_annual</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">loan</span><span class="p">,</span> <span class="n">loan_remaining</span><span class="p">)</span> <span class="o">*</span> <span class="n">interest_rate</span>
 
-	<span class="k">return</span> <span class="n">payments</span>
+        <span class="n">loan_remaining</span> <span class="o">+=</span> <span class="n">interest_annual</span>
+        <span class="n">loan_remaining</span> <span class="o">-=</span> <span class="n">payment_annual</span>
+
+        <span class="n">interest_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">interest_annual</span><span class="p">)</span>
+
+        <span class="n">payment_total</span> <span class="o">+=</span> <span class="n">payment_annual</span>
+        <span class="c1"># print &quot;Total payment:&quot;, payment_total</span>
+
+        <span class="c1"># print &quot;Remaining loan:&quot;, loan_remaining</span>
+
+        <span class="n">income_growing</span> <span class="o">+=</span> <span class="n">income_growing</span> <span class="o">*</span> <span class="n">income_growth</span>
+
+        <span class="n">payment_total_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">payment_total</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+        <span class="n">loan_remaining_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">loan_remaining</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+
+
+    <span class="n">payments</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">years</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)],</span>
+        <span class="n">payment_month</span> <span class="o">=</span> <span class="mi">12</span> <span class="o">*</span> <span class="p">[</span><span class="n">payment_month</span><span class="p">],</span>
+        <span class="n">interest_subsidy</span> <span class="o">=</span> <span class="mi">12</span> <span class="o">*</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">],</span>
+        <span class="n">payment_total</span> <span class="o">=</span> <span class="n">payment_total_list</span><span class="p">,</span>
+        <span class="n">loan_remaining</span> <span class="o">=</span> <span class="n">loan_remaining_list</span><span class="p">,</span>
+        <span class="n">interest_annual</span> <span class="o">=</span> <span class="n">interest_list</span><span class="p">,</span>
+        <span class="n">income_annual</span> <span class="o">=</span> <span class="n">income_list</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">payments</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span></span><span class="n">loan</span> <span class="o">=</span> <span class="mi">411000</span>
+<span class="n">loan_balances</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">11</span>
+<span class="c1"># final loan balance is zero, initial balance equal to loan</span>
+<span class="n">loan_balances</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">loan</span>
+<span class="n">loan_balance</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span> <span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">loan</span><span class="p">,</span> <span class="n">loan_balances</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">*</span> <span class="o">.</span><span class="mo">0604</span><span class="p">)</span> <span class="o">+</span> <span class="n">loan_balances</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="p">(</span><span class="n">payment_monthly</span> <span class="o">*</span> <span class="mi">12</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[13]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[411000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12648,7 +12686,7 @@ var element = $('#bc0a6a39-e098-4bc4-9201-8f967f8f871f');
 
 <div class="output_html rendered_html output_subarea ">
 
-<script src="http://localhost:53099/autoload.js?bokeh-autoload-element=1002&bokeh-absolute-url=http://localhost:53099&resources=none" id="1002"></script>
+<script src="http://localhost:50778/autoload.js?bokeh-autoload-element=1002&bokeh-absolute-url=http://localhost:50778&resources=none" id="1002"></script>
 </div>
 
 </div>
@@ -12671,11 +12709,11 @@ var element = $('#bc0a6a39-e098-4bc4-9201-8f967f8f871f');
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Interest-subsidy-is-great">Interest subsidy is great<a class="anchor-link" href="#Interest-subsidy-is-great">&#182;</a></h3><p>From the table above, you can see that the interest subsidy really pays off for us. My partner does not make enough in annual payments to cover the interest for <em>six years</em>. Although he's making payments that don't touch the principal, it's really nice that interest doesn't keep adding up thanks to the subsidy. You can also see how over the first six years the interest subsidy keeps decreasing until he makes enough money to cover the interest payments.</p>
+<h3 id="Interest-subsidy-is-great">Interest subsidy is great<a class="anchor-link" href="#Interest-subsidy-is-great">&#182;</a></h3><p>From the table above, you can see that the interest subsidy really pays off. My friend does not make enough in annual payments to cover the interest for <em>six years</em>. Although he's making payments that don't touch the principal, it's really nice that interest doesn't keep adding up thanks to the subsidy. You can also see how over the first six years the interest subsidy keeps decreasing until he makes enough money to cover the interest payments.</p>
 <h3 id="Monthly-payments">Monthly payments<a class="anchor-link" href="#Monthly-payments">&#182;</a></h3><p>Although the monthly payments nearly double over 20 years, it's still less than the monthly payment under the standard plan (code still in progress, but its ~$4,700/month).</p>
 <h3 id="In-progress">In progress<a class="anchor-link" href="#In-progress">&#182;</a></h3><p>I plan to add functionality that will calculate how much more you pay with REPAYE vs. standard loan, and which one makes better financial sense, including the tax bomb. I've run the numbers by hand, including the tax bomb, and you pay ~\$48,000 more under the REPAYE plan compared to standard (\$548K vs \$590K), although it's spread out over ten more years. The tax bomb for REPAYE on \$257K forgiven is ~\$130K, based on his income growth after 20 years and the California Income tax calculator (with and without the tax bomb). One thing to consider is that the burden of this bill will be eased with inflation.</p>
-<h3 id="Final-verdict">Final verdict<a class="anchor-link" href="#Final-verdict">&#182;</a></h3><p>I was pleasantly surprised to see that the difference in the total amount paid on the loan between REPAYE vs. standard wasn't too big, roughly one extra year of paying on the standard plan. While it's a lot to save up for the tax bomb, the saving is spread out over 20 years and the impact is reduced with inflation (i.e. it's easier to pay that off with future dollars). Finally, although we aren't planning on this, the tax bomb could be changed with legislation. Many students signed on to these types of plans within the past few years, so there is some years before millions of people will have to pay up for this loan forgiveness.</p>
-<p>We personally think that the tax bomb is worth it in order to enjoy our money while we're younger, for things like buying a house. The standard monthly payment is such a high percentage of his monthly income, almost 40%, and he could theoretically pay off the loan aggressively over the next five or so years. While the choice is very personal and depends on your own financial philosophy and circumstance, planning ahead for the loan forgiveness seems to be the smartest choice for us both financially and for our happiness!</p>
+<h3 id="Final-verdict">Final verdict<a class="anchor-link" href="#Final-verdict">&#182;</a></h3><p>I was pleasantly surprised to see that the difference in the total amount paid on the loan between REPAYE vs. standard wasn't too large, roughly one extra year of paying on the standard plan. While it's a lot to save up for the tax bomb, the saving is spread out over 20 years and the impact is reduced with inflation (i.e. it's easier to pay that off with future dollars). Finally, although we aren't planning on this, the tax bomb could be changed with legislation. Many students signed on to these types of plans within the past few years, so there is some years before millions of people will have to pay up for this loan forgiveness.</p>
+<p>The choice between aggressively paying off the loan now or saving up for the tax bomb on the loan forgiveness is a personal decision. On one hand, paying off the debt sooner means the burden is lifted within five to ten years, but your full earning potential is greatly decreased while paying off the loan. If you choose to go for tax forgiveness, you bear the debt burden much longer but can enjoy more of your money sooner, for things like buying a home. For my friend, the standard monthly payment is such a high percentage of his monthly income, almost 40%, and he would prefer to have more of his money now and save over the next 20 years for the eventual tax burden. In the end, the decision is very personal and depends on your own financial philosophy and circumstance.</p>
 
 </div>
 </div>
